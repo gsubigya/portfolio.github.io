@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How QR Codes Became a New Phishing Attack Vector | Subigya Ghimire</title>
+<meta name="description" content="“Quishing” exploits the one habit most email security training never covers: scanning first, thinking later.">
+<meta name="robots" content="index, follow">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#FAF8F2">
+<link rel="canonical" href="https://subigya.com/articles/qr-codes-phishing-attack-vector/">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Subigya Ghimire">
+<meta property="og:title" content="How QR Codes Became a New Phishing Attack Vector | Subigya Ghimire">
+<meta property="og:description" content="“Quishing” exploits the one habit most email security training never covers: scanning first, thinking later.">
+<meta property="og:url" content="https://subigya.com/articles/qr-codes-phishing-attack-vector/">
+<meta property="og:image" content="https://subigya.com/assets/img/og-qr-phishing.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How QR Codes Became a New Phishing Attack Vector | Subigya Ghimire">
+<meta name="twitter:description" content="“Quishing” exploits the one habit most email security training never covers: scanning first, thinking later.">
+<meta name="twitter:image" content="https://subigya.com/assets/img/og-qr-phishing.png">
+
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; script-src 'self' 'unsafe-inline'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/assets/img/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<link rel="stylesheet" href="/assets/css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Subigya Ghimire",
+  "url": "https://subigya.com",
+  "image": "https://subigya.com/assets/img/apple-touch-icon.png",
+  "sameAs": [
+    "https://github.com/gsubigya",
+    "https://www.linkedin.com/in/subigya-ghimire/",
+    "https://medium.com/@subigya.com"
+  ],
+  "jobTitle": "Security Researcher",
+  "description": "Security researcher based in Nepal, focused on penetration testing, OSINT, red teaming, and digital privacy.",
+  "knowsAbout": ["Penetration Testing", "OSINT", "Red Teaming", "Threat Detection", "Digital Privacy", "Ethical Hacking", "Cybersecurity in Nepal"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How QR Codes Became a New Phishing Attack Vector",
+  "description": "“Quishing” exploits the one habit most email security training never covers: scanning first, thinking later.",
+  "image": "https://subigya.com/assets/img/og-qr-phishing.png",
+  "author": { "@type": "Person", "name": "Subigya Ghimire", "url": "https://subigya.com/about/" },
+  "publisher": {
+    "@type": "Person",
+    "name": "Subigya Ghimire",
+    "logo": { "@type": "ImageObject", "url": "https://subigya.com/assets/img/apple-touch-icon.png" }
+  },
+  "datePublished": "2025-06-12",
+  "dateModified": "2025-06-12",
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://subigya.com/articles/qr-codes-phishing-attack-vector/" }
+}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://subigya.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://subigya.com/articles/"},{"@type":"ListItem","position":3,"name":"How QR Codes Became a New Phishing Attack Vector","item":"https://subigya.com/articles/qr-codes-phishing-attack-vector/"}]}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="masthead">
+  <p class="kicker">Vol. I &mdash; Est. 2026</p>
+  <h1 class="masthead-name"><a href="/">Subigya Ghimire</a></h1>
+  <p class="masthead-tagline">Security Research &middot; Privacy &middot; Systems Thinking</p>
+</header>
+<hr class="rule-heavy">
+<hr class="rule-light">
+<nav class="masthead-nav" aria-label="Section navigation">
+  <a href="/">Home</a>
+  <a href="/articles/" aria-current="page">Articles</a>
+  <a href="/security-tips/">Security Tips</a>
+  <a href="/about/">About</a>
+  <a href="/contact/">Contact</a>
+  <a href="https://github.com/gsubigya" rel="me noopener noreferrer" target="_blank">GitHub &#8599;</a>
+</nav>
+<hr class="rule">
+<nav class="breadcrumb wrap" aria-label="Breadcrumb"><a href="/">Home</a> <span class="sep">/</span> <a href="/articles/">Articles</a> <span class="sep">/</span> <span aria-current="page">How QR Codes Became a New Phishing Attack Vector</span></nav>
+<main id="main" class="wrap">
+  <article>
+    <header style="padding-top:1.6rem;">
+      <p class="eyebrow">Dispatch</p>
+      <h1 class="headline">How QR Codes Became a New Phishing Attack Vector</h1>
+      <p class="article-meta">
+        <span>By <a href="/about/">Subigya Ghimire</a></span>
+        <span aria-hidden="true">&middot;</span>
+        <span><time datetime="2025-06-12">Jun 12, 2025</time></span>
+        <span aria-hidden="true">&middot;</span>
+        <span>2 min read</span>
+      </p>
+    </header>
+
+    <nav class="toc" aria-label="Table of contents">
+      <p class="eyebrow">In this piece</p>
+      <ol>
+        <li><a href="#why">Why it works</a></li>
+<li><a href="#channel">Why it bypasses existing defenses</a></li>
+<li><a href="#scenarios">Where it shows up</a></li>
+<li><a href="#check">How to check before you scan</a></li>
+      </ol>
+    </nav>
+
+    
+<div class="lead article-body">
+<p>Years of phishing awareness training taught people to hover over links before clicking. QR codes quietly sidestep that entire habit — there's nothing to hover over. You point a camera, the phone resolves the code, and a browser opens before anyone has had a chance to read a URL.</p>
+
+<h2 id="why">Why it works</h2>
+<p>A QR code is just a container for a string, almost always a URL. The code itself gives no visual indication of where it leads — a code pointing to a legitimate banking site and one pointing to a lookalike phishing domain are visually identical. That single property breaks most of the intuitions people rely on to spot phishing: no suspicious sender, no misspelled link text, no obviously wrong domain sitting in plain view before a click.</p>
+
+<h2 id="channel">Why it bypasses existing defenses</h2>
+<p>Email security tools are built to scan text and links inside a message body. A QR code is an image. Many scanning tools don't decode the embedded URL from an image attachment the way they would a plain-text link, so a phishing QR code can sail through filters tuned for years of text-based threats.</p>
+
+<h2 id="scenarios">Where it shows up</h2>
+<ul>
+<li><strong>Parking meters and public payment points</strong> — a sticker with a fraudulent QR code placed over the real one, routing "pay for parking" to a fake payment page.</li>
+<li><strong>Restaurant menus</strong> — the same overlay trick, exploiting the post-pandemic habit of scanning to see a menu.</li>
+<li><strong>Fake delivery notices</strong> — "your package couldn't be delivered, scan to reschedule," leading to a credential-harvesting page styled like a courier's site.</li>
+<li><strong>Internal-looking corporate emails</strong> — "scan to verify your account" QR codes embedded in otherwise convincing phishing emails, aimed specifically at bypassing link-scanning security tools.</li>
+</ul>
+
+<blockquote class="pullquote">A QR code isn't a link you can inspect. It's a link you're asked to trust before you can see it.</blockquote>
+
+<h2 id="check">How to check before you scan</h2>
+<ul>
+<li>Most phone cameras show a preview of the destination URL before opening it — read that preview fully, including the domain, before tapping through.</li>
+<li>Be suspicious of QR codes that are stickers layered on top of another surface, especially in public places like parking meters, posters, or table tents.</li>
+<li>Treat "scan to verify," "scan to claim," and "scan to reschedule" QR codes in email with the same skepticism as a text link making the same request — go to the organization's site directly instead.</li>
+<li>Avoid entering credentials or payment details on a page you reached via QR code unless you independently recognize and trust the domain shown.</li>
+</ul>
+
+<p>QR codes aren't inherently dangerous — the format is neutral. The risk comes from the gap between how convenient they are to scan and how little verification most people do before trusting where they lead.</p>
+</div>
+
+
+    <p class="see-also">Originally written up in longer form on <a href="https://medium.com/@subigya.com/how-qr-codes-are-the-new-phishing-attack-vector-and-how-hackers-use-them-to-trick-you-6194ffbdd286" rel="noopener noreferrer" target="_blank">Medium</a>.</p>
+
+    <div class="author-box">
+  <div class="author-avatar" aria-hidden="true">SG</div>
+  <div>
+    <h4>Subigya Ghimire</h4>
+    <p>Security researcher focused on penetration testing, OSINT, red teaming, and digital privacy.</p>
+    <p class="author-links">
+      <a href="/about/">About</a><a href="https://github.com/gsubigya" rel="me noopener noreferrer" target="_blank">GitHub</a><a href="https://www.linkedin.com/in/subigya-ghimire/" rel="me noopener noreferrer" target="_blank">LinkedIn</a>
+    </p>
+  </div>
+</div>
+  </article>
+</main>
+<hr class="rule">
+<footer class="wrap">
+  <div class="footer-links">
+    <a href="https://github.com/gsubigya" rel="me noopener noreferrer" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/subigya-ghimire/" rel="me noopener noreferrer" target="_blank">LinkedIn</a>
+    <a href="https://medium.com/@subigya.com" rel="me noopener noreferrer" target="_blank">Medium</a>
+    <a href="/security-tips/">Security Tips</a>
+    <a href="/contact/">Contact</a>
+  </div>
+  <p class="footer-meta mono">&copy; 2026 Subigya Ghimire. No analytics, no ad scripts, no tracking pixels &mdash; fonts and scripts are self-hosted.</p>
+</footer>
+<script src="/assets/js/main.js" defer></script>
+</body>
+</html>

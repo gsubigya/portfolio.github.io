@@ -1,0 +1,27 @@
+# subigya.com
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# Aggressive AI-training crawlers — disallowed; adjust if you want them to index you
+User-agent: GPTBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: https://subigya.com/sitemap.xml
