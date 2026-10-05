@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ===== SEO: title, description, keywords, robots ===== -->
+  <title>Subigya Ghimire (Subigya G) | Cybersecurity Researcher</title>
+  <meta name="description" content="Subigya Ghimire (Subigya G): cybersecurity researcher focused on offensive security, API security, OSINT, and threat intelligence. Primary site: subigya.com.">
+  <!-- Search engines such as Google ignore meta keywords; kept short and honest. -->
+  <meta name="keywords" content="Subigya Ghimire, Subigya G, cybersecurity researcher, offensive security, API security, web security, OSINT, cyber threat intelligence, CTI, digital forensics, vulnerability research, security research, Nepal">
+  <meta name="author" content="Subigya Ghimire">
+  <meta name="robots" content="index, follow">
+
+  <!-- Canonical points at the primary site, as requested.
+       To let this page be indexed on its own instead,
+       use https://subigyaghimire.com.np/ -->
+  <link rel="canonical" href="https://subigya.com">
+
+  <!-- ===== Open Graph ===== -->
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Subigya Ghimire">
+  <meta property="og:title" content="Subigya Ghimire (Subigya G) | Cybersecurity Researcher">
+  <meta property="og:description" content="Cybersecurity researcher focused on offensive security, API security, OSINT, and threat intelligence.">
+  <meta property="og:url" content="https://subigya.com">
+  <meta property="og:locale" content="en">
+  <!-- Add og:image / twitter:image only when you have a real, hosted image URL. -->
+
+  <!-- ===== Twitter / X Card ===== -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Subigya Ghimire (Subigya G) | Cybersecurity Researcher">
+  <meta name="twitter:description" content="Cybersecurity researcher focused on offensive security, API security, OSINT, and threat intelligence.">
+
+  <!-- ===== Browser UI ===== -->
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+
+  <!-- ===== Structured data (Schema.org Person) =====
+       Keep this consistent with the visible text below.
+       Only add facts that are true and verifiable. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Subigya Ghimire",
+    "alternateName": "Subigya G",
+    "url": "https://subigya.com",
+    "jobTitle": "Cybersecurity Researcher",
+    "description": "Cybersecurity researcher focused on offensive security, API security, OSINT, cyber threat intelligence, digital evidence, and security research.",
+    "knowsAbout": [
+      "Offensive security",
+      "API security",
+      "Web security",
+      "OSINT",
+      "Cyber threat intelligence",
+      "Digital evidence",
+      "Vulnerability research"
+    ],
+    "sameAs": [
+      "https://subigyaghimire.com.np",
+      "https://github.com/gsubigya"
+    ]
+  }
+  </script>
+
+  <!-- Hides the "Redirecting" line when JavaScript is off (it would be untrue). -->
+  <noscript><style>#status { display: none; }</style></noscript>
+
+  <style>
+    :root {
+      --paper: #FFFFFF;
+      --ink: #121212;
+      --muted: #5A5A5A;
+      --rule: #DFDFDF;
+
+      /* Editorial type: Georgia for headlines and text, Franklin Gothic /
+         Helvetica for labels. No web fonts are loaded. */
+      --serif: Georgia, "Times New Roman", Times, serif;
+      --sans: "Franklin Gothic Medium", "Franklin Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --paper: #121212;
+        --ink: #FFFFFF;
+        --muted: #AFAFAF;
+        --rule: #3A3A3A;
+      }
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      margin: 0;
+      padding: max(1.5rem, env(safe-area-inset-top)) 1.5rem max(2rem, env(safe-area-inset-bottom));
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--serif);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Single left-aligned editorial column, like an article page. */
+    main {
+      max-width: 40rem;
+      margin: 0 auto;
+      padding-top: clamp(1.5rem, 8vh, 4.5rem);
+      border-top: 4px solid var(--ink);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.5rem, 1.6rem + 4.5vw, 3.75rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.05;
+    }
+    .aka {
+      margin: .5rem 0 0;
+      font-size: 1.125rem;
+      font-style: italic;
+      color: var(--muted);
+    }
+
+    .role {
+      margin: 1.75rem 0 0;
+      padding-top: 1rem;
+      border-top: 1px solid var(--ink);
+      font-family: var(--sans);
+      font-size: 1rem;
+      font-weight: 700;
+    }
+    .about {
+      margin: .5rem 0 0;
+      font-size: clamp(1.1875rem, 1.1rem + .4vw, 1.375rem);
+      line-height: 1.55;
+    }
+
+    h2 {
+      margin: 3rem 0 .75rem;
+      font-family: var(--sans);
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    /* Ruled rows, like a table of contents. */
+    .focus {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: 1fr;
+      column-gap: 2rem;
+      border-bottom: 1px solid var(--rule);
+    }
+    .focus li {
+      padding: .65rem 0;
+      border-top: 1px solid var(--rule);
+      font-size: 1.0625rem;
+    }
+    @media (min-width: 34rem) {
+      .focus { grid-template-columns: 1fr 1fr; }
+    }
+
+    .relation {
+      margin: 2.5rem 0 0;
+      font-size: 1rem;
+      color: var(--muted);
+    }
+    .domain { font-family: var(--sans); font-weight: 700; color: var(--ink); }
+
+    .redirect {
+      margin-top: 2.5rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--ink);
+    }
+    .status {
+      margin: 0 0 1rem;
+      font-family: var(--sans);
+      font-size: .9375rem;
+      color: var(--muted);
+    }
+
+    .btn {
+      display: inline-block;
+      padding: .8rem 1.5rem;
+      background: var(--ink);
+      color: var(--paper);
+      font-family: var(--sans);
+      font-size: 1rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .btn:hover { opacity: .85; }
+    .btn:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <header>
+        <h1>Subigya Ghimire</h1>
+        <p class="aka"></p>
+        <p class="role">Cybersecurity Researcher</p>
+      </header>
+
+      <p class="about">
+        Cybersecurity researcher focused on offensive security, API security, OSINT,
+        cyber threat intelligence, digital evidence, and security research.
+      </p>
+
+      <section aria-labelledby="focus-heading">
+        <h2 id="focus-heading">Focus Areas</h2>
+        <ul class="focus">
+          <li>Offensive Security</li>
+          <li>API Security</li>
+          <li>Web Security</li>
+          <li>OSINT &amp; CTI</li>
+          <li>Digital Evidence</li>
+          <li>Vulnerability Research</li>
+        </ul>
+      </section>
+
+      <p class="relation">
+        <span class="domain">subigyaghimire.com.np</span> is an alternate identity domain for
+        Subigya Ghimire (Subigya G). My primary website is
+        <span class="domain">subigya.com</span>.
+      </p>
+
+      <footer class="redirect">
+        <p id="status" class="status">Redirecting you to my primary website…</p>
+        <a class="btn" href="https://subigya.com">Continue to subigya.com</a>
+        <noscript>
+          <p class="status">JavaScript is off, so you won’t be redirected automatically.</p>
+        </noscript>
+      </footer>
+    </article>
+  </main>
+
+  <script>
+    (() => {
+      "use strict";
+
+      // Redirect destination and delay. Keep TARGET_URL in sync with the
+      // button href, canonical, og:url and JSON-LD "url" above.
+      const TARGET_URL = "https://subigya.com";
+      const REDIRECT_DELAY_MS = 5000;
+
+      const target = new URL(TARGET_URL);
+
+      // Loop guard: never redirect if we're already on the destination host.
+      if (window.location.hostname === target.hostname) return;
+
+      // replace() navigates in the same tab and keeps this page out of
+      // history, so the Back button doesn't bounce visitors straight back here.
+      window.setTimeout(() => window.location.replace(target.href), REDIRECT_DELAY_MS);
+    })();
+  </script>
+</body>
+</html>
